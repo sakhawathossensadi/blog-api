@@ -57,7 +57,7 @@ class ServiceProvider extends SupportServiceProvider
     private function routeConfiguration(): array
     {
         return [
-            'namespace' => 'Halal\Halal\Http\Controllers',
+            'namespace' => 'Blog\Blog\Http\Controllers',
         ];
     }
 
