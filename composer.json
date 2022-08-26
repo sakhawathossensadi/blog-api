@@ -1,0 +1,19 @@
+{
+    "name": "blog/blog",
+    "description": "Blog package",
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Blog\\Blog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sakhawathossensadi",
+            "email": "newtonss919@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
