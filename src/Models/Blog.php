@@ -21,4 +21,9 @@ class Blog extends Model
         'image_url',
         'published_at',
     ];
+
+    public static function newFactory()
+    {
+        return \Blog\Blog\Database\Factories\BlogFactory::new();
+    }
 }
