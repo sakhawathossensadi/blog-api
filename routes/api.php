@@ -1,16 +1,16 @@
 <?php
 
-use Blog\Blog\Http\Contollers\BlogController;
+use Blog\Blog\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(
     [
-        'prefix' => 'blogs',
-        'middleware' => ['api'],
+        'prefix' => 'blog',
+        'middleware' => ['auth:api'],
     ],
 
     static function (): void {
-        Route::post('post', [BlogController::class, 'store'])->name('create.post');
+        Route::post('posts', [BlogController::class, 'store'])->name('store.post');
     }
 
 );
